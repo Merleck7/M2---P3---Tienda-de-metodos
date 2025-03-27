@@ -65,4 +65,4 @@ El proyecto consta de tres partes principales:
 
 1. Clona el repositorio en tu máquina local:
    ```bash
-   git clone <url_del_repositorio>
+   git clone <https://github.com/Merleck7/M2---P3---Tienda-de-metodos.git>
