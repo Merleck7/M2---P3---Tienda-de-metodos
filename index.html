@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./src/main.js" defer></script>
+    <link rel="stylesheet" href="./src/style.css">
+    <title>Practica - Metodos de Arreglos</title>
+</head>
+<body>
+    <header>
+        <h1>Tienda Virtual de Luis</h1>
+    </header>
+
+    <div class="controls">
+        <button class="btn sort" onclick="toggleSort()">Ordenar alfabéticamente</button>
+        <button class="btn filter" onclick="toggleFilter()">Filtrar por precio < $100</button>
+        <button class="btn names" onclick="toggleNames()">Mostrar solo nombres</button>
+    </div>
+
+    <div class="container" id="products">
+        <div class="card" data-name="Camiseta" data-price="15">
+            <img src="./img/Camiseta.jpg" alt="Camiseta">
+            <div class="card-content">
+                <h3>Camiseta</h3>
+                <p>Precio: $15</p>
+                <button class="btn" onclick="addToCart('Camiseta', 15)">Agregar al carrito</button>
+            </div>
+        </div>
+        <div class="card" data-name="Laptop" data-price="800">
+            <img src="./img/Laptop.jpg" alt="Laptop">
+            <div class="card-content">
+                <h3>Laptop</h3>
+                <p>Precio: $800</p>
+                <button class="btn" onclick="addToCart('Laptop', 800)">Agregar al carrito</button>
+            </div>
+        </div>
+        <div class="card" data-name="Libro" data-price="12">
+            <img src="./img/libro.jpeg" alt="Libro">
+            <div class="card-content">
+                <h3>Libro</h3>
+                <p>Precio: $12</p>
+                <button class="btn" onclick="addToCart('Libro', 12)">Agregar al carrito</button>
+            </div>
+        </div>
+        <div class="card" data-name="Zapatos" data-price="50">
+            <img src="./img/Zapatos.jpg" alt="Zapatos">
+            <div class="card-content">
+                <h3>Zapatos</h3>
+                <p>Precio: $50</p>
+                <button class="btn" onclick="addToCart('Zapatos', 50)">Agregar al carrito</button>
+            </div>
+        </div>
+        <div class="card" data-name="Celular" data-price="600">
+            <img src="./img/Celular.jpg" alt="Celular">
+            <div class="card-content">
+                <h3>Celular</h3>
+                <p>Precio: $1500</p>
+                <button class="btn" onclick="addToCart('Celular', 600)">Agregar al carrito</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="cart" id="cart">
+        <h3>Carrito de Compras</h3>
+        <ul id="cart-list"></ul>
+        <p id="total">Total: $0</p>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Tienda Virtual de Luis - Todos los derechos reservados -  Se feliz c:</p>
+    </footer>
+
+</body>
+</html>
